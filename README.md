@@ -1,5 +1,5 @@
-# FE Migration Analysis System
-Tumoursphere migraitory boundaries (TMB) are mapped out using U-Net machine learning segmentation, and its migration is modelled and quantitatively analysed
+# Finite Element Migration Analysis System
+Tumoursphere migraitory boundaries (TMB) are mapped out using U-Net machine learning segmentation, and its migration is modelled and quantitatively analysed using finite element (FE) methods.
 
 # THE WORKING PC I USED TO RUN THIS SYSTEM:
 - AMD R7 3800x CPU
