@@ -25,7 +25,9 @@ Tumoursphere migraitory boundaries (TMB) are mapped out using U-Net machine lear
 **1.)** The TMB needed to be segmented before it can be modelled, so tensorflow was used to train the images to segment them. To do that, arrange your training folder similarly to /U-Nnet/train/ folder structure and run train.py in the /U-Net/ folder.
   - You can check the accuracy and validation progress using tensorboard to access your ML model (https://www.tensorflow.org/tensorboard/get_started).
 
-**2.)** After segmentation, use MATLAB to 
+**2.)** After segmentation, use MATLAB to extract the xyz coordinates (as a .xyz format) and create a GMSH txt file for initial TMB meshing.
+
+**3.)** Using GMSH, create a 3D mesh 
 
 
 
