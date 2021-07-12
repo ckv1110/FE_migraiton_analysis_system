@@ -7,7 +7,7 @@ Tumoursphere migraitory boundaries (TMB) are mapped out using U-Net machine lear
 - RTX 2080 GPU
 - WINDOWS 10/11
 
-Note: The most important aspect of the PC to run the system will most likely be the GPU (for machine learning assisted segmentation) - I primarily utilized the GPU to train the segmentations.
+**Note:** The most important aspect of the PC to run the system will most likely be the GPU (for machine learning assisted segmentation) - I primarily utilized the GPU to train the segmentations.
 
 # SOFTWARE USED FOR THIS SYSTEM:
 - Python 3.7.7 (main prerequisite modules are as listed below):
