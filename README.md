@@ -15,7 +15,7 @@ Note: The most important aspect of the PC to run the system will most likely be 
   - numpy
   - scipy
   - opencv
-  - scikit
+  - scikit-image
 - The latest version of FEBio (To model and and analyse the migration of the TMB)
 
 
