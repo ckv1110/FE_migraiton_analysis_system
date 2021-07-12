@@ -23,7 +23,7 @@ Note: The most important aspect of the PC to run the system will most likely be 
 
 # HOW TO USE THE SYSTEM:
 **1.)** The TMB needed to be segmented before it can be modelled, so tensorflow was used to train the images to segment them. To do that, arrange your training folder similarly to /U-Nnet/train/ folder structure and run train.py in the /U-Net/ folder.
-  - You can check the accuracy and validation progress using tensorboard to access your ML model.
+  - You can check the accuracy and validation progress using tensorboard to access your ML model (https://www.tensorflow.org/tensorboard/get_started).
 
 **2.)** After segmentation, use MATLAB to 
 
