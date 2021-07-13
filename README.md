@@ -5,7 +5,7 @@ Tumoursphere migraitory boundaries (TMB) are mapped out using U-Net machine lear
 - AMD R7 3800x CPU
 - 16GB 3200MHz RAM
 - RTX 2080 GPU
-- WINDOWS 10/11
+- WINDOWS 10/11 OS
 
 **Note:** The most important aspect of the PC to run the system will most likely be the GPU (for machine learning assisted segmentation) - This system primarily utilized the GPU to train the segmentations.
 
