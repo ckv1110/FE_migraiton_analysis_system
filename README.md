@@ -47,11 +47,11 @@ Tumoursphere migraitory boundaries (TMB) are mapped out using U-Net machine lear
 **5.)** xyz coordinates of the FEBio mesh is extracted, fitted to the initial mesh, and the nodal displacements are calculated for the prescribed x,y displacement nodes using the batch_script_abs.py. The nodal displacements are overwritten in the .feb file and the code will run FEBio terminal to model the migration changes.
 - This should automate when the timepoints of the segmented images are given.
 
-###ADDITIONAL NOTES:
+### ADDITIONAL NOTES:
 An examplar is provided so you can have a look at the folder and file structure for this system to work.
 More information can be found in our article (will be posted here when published)
 
-###REFERENCES:
+### REFERENCES:
 - Ronneberger, O., Fischer, P., & Brox, T. (2015, October). U-net: Convolutional networks for biomedical image segmentation. In International Conference on Medical image computing and computer-assisted intervention (pp. 234-241). Springer, Cham.
 
 
