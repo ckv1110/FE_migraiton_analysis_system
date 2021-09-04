@@ -24,6 +24,7 @@ Tumoursphere migraitory boundaries (TMB) are mapped out using U-Net machine lear
 ### HOW TO OPERATE THE SYSTEM:
 **1.)** The TMB needed to be segmented before it can be modelled. In this system, a ML-based approached using the U-Net architecture **_(Ronneberger, Fischer, and Brox. 2015)_** is used to train the images and segment them. To do that, arrange your training folder as outlined below and run train.py in the /U-Net/ folder.
 - The training folder structure should look like **train/[training_number e.g. 19]/[labeled.png], [raw.png]**
+- Feel free to customize your own folder structure, as long as train.py can read both sets it will work.
 - You can check the accuracy and validation progress using tensorboard to access your ML model (https://www.tensorflow.org/tensorboard/get_started).
 - A compilation of videos created by DigitalSreeni about U-Net was really helpful in informing on how the architecture works and how it is applied in tensorflow
   - DigitalSreeni's YouTube: https://www.youtube.com/watch?v=azM57JuQpQI&list=PLZsOBAyNTZwbR08R959iCvYT3qzhxvGOE&index=1
