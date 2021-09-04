@@ -18,7 +18,7 @@ Tumoursphere migraitory boundaries (TMB) are mapped out using U-Net machine lear
   - opencv
   - scikit-image
 - FEBio (To model and and analyse the migration of the TMB)
-- MATLAB (To extract the xyz coordinates of the TMB for host mesh fitting)
+- MATLAB (To extract the TMB xyz coordinates for host mesh fitting)
 - GMSH (To make an initial TMB mesh)
 
 ### HOW TO OPERATE THE SYSTEM:
