@@ -49,7 +49,7 @@ Tumoursphere migraitory boundaries (TMB) are mapped out using U-Net machine lear
 - This should automate when the timepoints of the segmented images are given.
 
 ### ADDITIONAL NOTES:
-An examplar is provided so you can have a look at the folder and file structure for this system to work.
+An examplar is provided so you can have a look at how it works (the 0_1 in the treatment_b example under the modelling folder refers to the host mesh fitting of the cylindrical reference mesh to the initial mesh).
 More information can be found in our article (will be posted here when published)
 
 ### REFERENCES:
