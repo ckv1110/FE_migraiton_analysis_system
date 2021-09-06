@@ -30,7 +30,7 @@ Tumoursphere migraitory boundaries (TMB) are mapped out using U-Net machine lear
   - DigitalSreeni's YouTube: https://www.youtube.com/watch?v=azM57JuQpQI&list=PLZsOBAyNTZwbR08R959iCvYT3qzhxvGOE&index=1
   - DigitalSreeni's github: https://github.com/bnsreenu/python_for_microscopists
 
-**2.)** After segmentation, use MATLAB to extract the xyz coordinates (as a .xyz format) and create a GMSH txt file for initial TMB meshing.
+**2.)** After segmentation, use MATLAB to extract the xyz coordinates (as a .xyz format) and create a GMSH txt file for initial TMB meshing (mesh_maker_part_1.m).
 - The GMSH txt file is only required for the initial image to generate the initial mesh to host mesh fit
 - Other segmented images should have their xyz coordinates extracted in this step to ensure a more automated process in later steps
 
