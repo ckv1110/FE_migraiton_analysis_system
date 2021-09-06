@@ -1,0 +1,1869 @@
+===========================================================================
+         ________    _________   _______       __     _________            
+        |        |\ |        |\ |       \\    |  |\  /         \\          
+        |    ____|| |    ____|| |    __  ||   |__|| |    ___    ||         
+        |   |\___\| |   |\___\| |   |\_| ||    \_\| |   //  \   ||         
+        |   ||__    |   ||__    |   ||_| ||   |  |\ |  ||    |  ||         
+        |       |\  |       |\  |         \\  |  || |  ||    |  ||         
+        |    ___||  |    ___||  |    ___   || |  || |  ||    |  ||         
+        |   |\__\|  |   |\__\|  |   |\__|  || |  || |  ||    |  ||         
+        |   ||      |   ||___   |   ||__|  || |  || |   \\__/   ||         
+        |   ||      |        |\ |          || |  || |           ||         
+        |___||      |________|| |_________//  |__||  \_________//          
+                                                                           
+      F I N I T E   E L E M E N T S   F O R   B I O M E C H A N I C S      
+                                                                           
+  version 3.1.0
+  FEBio is a registered trademark.                                         
+  copyright (c) 2006-2020 - All rights reserved                            
+                                                                           
+===========================================================================
+
+
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+Setting parameter "scale" to : 0
+
+
+
+ FILES USED
+===========================================================================
+	Input file : t115_ctrl_tram_01_64_v2_redo_hmf.feb
+	Plot file  : t115_ctrl_tram_01_64_v2_redo_hmf.xplt
+	Log file   : t115_ctrl_tram_01_64_v2_redo_hmf.log
+
+
+ MESH INFO
+===========================================================================
+	Number of materials ............................ : 1
+	Number of domains .............................. : 1
+	Number of nodes ................................ : 836
+	Number of solid elements ....................... : 576
+
+
+ CONTROL DATA
+===========================================================================
+	Module type .................................... : solid
+	Analysis type .................................. : quasi-static
+	Number of timesteps ............................ : 10
+	Time step size ................................. : 0.1
+	Auto time stepper activated .................... : yes
+	  Optimal nr of iterations ..................... : 10
+	  Minimum allowable step size .................. : 0.01
+	  Maximum allowable step size .................. : 0.1
+	Number of load controllers ..................... : 64
+
+
+ SOLVER PARAMETERS
+===========================================================================
+	symmetric_stiffness ............................... : 1
+	equation_scheme ................................... : 0
+	equation_order .................................... : 0
+	optimize_bw ....................................... : 0
+	lstol ............................................. : 0.9
+	lsmin ............................................. : 0.01
+	lsiter ............................................ : 5
+	max_refs .......................................... : 15
+	check_zero_diagonal ............................... : false
+	zero_diagonal_tol ................................. : 0
+	force_partition ................................... : 0
+	reform_each_time_step ............................. : true
+	reform_augment .................................... : false
+	diverge_reform .................................... : true
+	do_reforms ........................................ : true
+	etol .............................................. : 0.01
+	rtol .............................................. : 0
+	min_residual ...................................... : 1e-20
+	max_residual ...................................... : 0
+	qnmethod .......................................... : 0
+	max_ups ........................................... : 10
+	qn_max_buffer_size ................................ : 0
+	qn_cycle_buffer ................................... : true
+	cmax .............................................. : 100000
+	dtol .............................................. : 0.001
+	rhoi .............................................. : 0
+	alpha ............................................. : 1
+	beta .............................................. : 0.25
+	gamma ............................................. : 0.5
+	logSolve .......................................... : false
+	arc_length ........................................ : 0
+	arc_length_scale .................................. : 0
+
+
+ OUTPUT DATA
+===========================================================================
+	plot level ................................ : major iterations
+	plotfile format ........................... : FEBIO
+		Nodal Variables:
+			displacement         (type = vec3f, format = NODE)
+		Domain Variables:
+			relative volume      (type = float, format = ITEM)
+			stress               (type = mat3fs, format = ITEM)
+
+
+ MATERIAL DATA
+===========================================================================
+  1 - Material1 (type: neo-Hookean)
+	mat_axis .......................................... : (can't display value)
+	density ........................................... : 1
+	secant ............................................ : false
+	E ................................................. : 10
+	v ................................................. : 0.3
+
+
+ BOUNDARY CONDITION DATA
+===========================================================================
+  1 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -35.6606
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+  2 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 226.946
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+  3 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 61.3104
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+  4 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 233.153
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+  5 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 132.867
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+  6 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 198.194
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+  7 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 179.803
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+  8 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 142.058
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+  9 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 217.957
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 10 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 118.276
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 11 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 244.644
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 12 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 108.529
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 13 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 268.417
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 14 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 89.7157
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 15 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 282.246
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 16 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 45.0829
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 17 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 264.461
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 18 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -33.8912
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 19 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 243.129
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 20 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -106.047
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 21 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 220.017
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 22 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -152.104
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 23 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 192.53
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 24 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -181.408
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 25 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 165.904
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 26 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -204.434
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 27 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 152.108
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 28 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -215.634
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 29 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 152.141
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 30 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -211.518
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 31 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 128.76
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 32 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -205.369
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 33 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 59.8064
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 34 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -211.82
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 35 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -16.231
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 36 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -224.619
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 37 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -82.5966
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 38 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -233.804
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 39 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -132.001
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 40 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -229.801
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 41 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -163.333
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 42 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -210.237
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 43 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -180.716
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 44 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -174.685
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 45 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -186.819
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 46 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -120.057
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 47 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -192.641
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 48 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -57.037
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 49 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -209.188
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 50 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -15.2179
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 51 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -226.282
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 52 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 7.04809
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 53 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -234.249
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 54 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 43.0462
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 55 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -215.329
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 56 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 98.5594
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 57 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -178.293
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 58 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 145.805
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 59 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -150.019
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 60 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 175.692
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 61 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -126.356
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 62 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 195.6
+	dof ............................................... : 1
+---------------------------------------------------------------------------
+ 63 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : -94.726
+	dof ............................................... : 0
+---------------------------------------------------------------------------
+ 64 -  Type: prescribe
+	relative .......................................... : false
+	scale ............................................. : 211.877
+	dof ............................................... : 1
+
+
+ LINEAR SOLVER DATA
+===========================================================================
+	Solver type ....................................... : pardiso
+	Matrix format ..................................... : symmetric
+
+
+===== beginning time step 1 : 0.1 =====
+
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+Setting parameter "scale" to : 0.1
+
+Reforming stiffness matrix: reformation #1
+
+===== reforming stiffness matrix:
+	Nr of equations ........................... : 2508
+	Nr of nonzeroes in stiffness matrix ....... : 81219
+ 1
+ Nonlinear solution status: time= 0.1
+	stiffness updates             = 0
+	right hand side evaluations   = 2
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            3.785106e+09    9.640727e+05    0.000000e+00 
+	   energy              1.252275e+07    2.434810e+04    1.252275e+05 
+	   displacement        1.869683e+05    1.869683e+05    1.869683e-01 
+ 2
+ Nonlinear solution status: time= 0.1
+	stiffness updates             = 1
+	right hand side evaluations   = 3
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            3.785106e+09    7.938183e+03    0.000000e+00 
+	   energy              1.252275e+07    5.716795e+01    1.252275e+05 
+	   displacement        1.869683e+05    4.632095e+01    1.873444e-01 
+ 3
+ Nonlinear solution status: time= 0.1
+	stiffness updates             = 2
+	right hand side evaluations   = 4
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            3.785106e+09    6.036662e+01    0.000000e+00 
+	   energy              1.252275e+07    2.260039e+00    1.252275e+05 
+	   displacement        1.869683e+05    1.169892e+00    1.873847e-01 
+ 4
+ Nonlinear solution status: time= 0.1
+	stiffness updates             = 3
+	right hand side evaluations   = 5
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            3.785106e+09    2.830020e-01    0.000000e+00 
+	   energy              1.252275e+07    6.589173e-03    1.252275e+05 
+	   displacement        1.869683e+05    1.725789e-02    1.873683e-01 
+
+convergence summary
+    number of iterations   : 4
+    number of reformations : 1
+
+------- converged at time : 0.1
+
+
+Data Record #1
+===========================================================================
+Step = 1
+Time = 0.1
+Data = x;y;z
+
+Data Record #2
+===========================================================================
+Step = 1
+Time = 0.1
+Data = ux;uy;uz
+
+Data Record #3
+===========================================================================
+Step = 1
+Time = 0.1
+Data = E1
+
+===== beginning time step 2 : 0.2 =====
+
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+Setting parameter "scale" to : 0.2
+
+Reforming stiffness matrix: reformation #1
+
+ 1
+ Nonlinear solution status: time= 0.2
+	stiffness updates             = 0
+	right hand side evaluations   = 2
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            2.863707e+09    9.712523e+05    0.000000e+00 
+	   energy              1.033454e+07    2.370558e+04    1.033454e+05 
+	   displacement        1.877497e+05    1.877497e+05    1.877497e-01 
+ 2
+ Nonlinear solution status: time= 0.2
+	stiffness updates             = 1
+	right hand side evaluations   = 3
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            2.863707e+09    9.962210e+03    0.000000e+00 
+	   energy              1.033454e+07    1.006052e+02    1.033454e+05 
+	   displacement        1.877497e+05    3.298138e+01    1.880901e-01 
+ 3
+ Nonlinear solution status: time= 0.2
+	stiffness updates             = 2
+	right hand side evaluations   = 4
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            2.863707e+09    3.086598e+01    0.000000e+00 
+	   energy              1.033454e+07    1.063878e+00    1.033454e+05 
+	   displacement        1.877497e+05    6.390056e-01    1.881026e-01 
+ 4
+ Nonlinear solution status: time= 0.2
+	stiffness updates             = 3
+	right hand side evaluations   = 5
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            2.863707e+09    2.019068e-01    0.000000e+00 
+	   energy              1.033454e+07    2.010940e-03    1.033454e+05 
+	   displacement        1.877497e+05    7.633376e-03    1.880870e-01 
+
+convergence summary
+    number of iterations   : 4
+    number of reformations : 1
+
+------- converged at time : 0.2
+
+
+Data Record #1
+===========================================================================
+Step = 2
+Time = 0.2
+Data = x;y;z
+
+Data Record #2
+===========================================================================
+Step = 2
+Time = 0.2
+Data = ux;uy;uz
+
+Data Record #3
+===========================================================================
+Step = 2
+Time = 0.2
+Data = E1
+
+===== beginning time step 3 : 0.3 =====
+
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+Setting parameter "scale" to : 0.3
+
+Reforming stiffness matrix: reformation #1
+
+ 1
+ Nonlinear solution status: time= 0.3
+	stiffness updates             = 0
+	right hand side evaluations   = 2
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            2.368887e+09    1.042040e+06    0.000000e+00 
+	   energy              8.853224e+06    2.265799e+04    8.853224e+04 
+	   displacement        1.886967e+05    1.886967e+05    1.886967e-01 
+ 2
+ Nonlinear solution status: time= 0.3
+	stiffness updates             = 1
+	right hand side evaluations   = 3
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            2.368887e+09    1.422506e+04    0.000000e+00 
+	   energy              8.853224e+06    1.376740e+02    8.853224e+04 
+	   displacement        1.886967e+05    2.031106e+01    1.889896e-01 
+ 3
+ Nonlinear solution status: time= 0.3
+	stiffness updates             = 2
+	right hand side evaluations   = 4
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            2.368887e+09    2.424507e+01    0.000000e+00 
+	   energy              8.853224e+06    4.818239e-01    8.853224e+04 
+	   displacement        1.886967e+05    3.658627e-01    1.889884e-01 
+ 4
+ Nonlinear solution status: time= 0.3
+	stiffness updates             = 3
+	right hand side evaluations   = 5
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            2.368887e+09    2.671762e-01    0.000000e+00 
+	   energy              8.853224e+06    6.191191e-04    8.853224e+04 
+	   displacement        1.886967e+05    2.871381e-03    1.889803e-01 
+
+convergence summary
+    number of iterations   : 4
+    number of reformations : 1
+
+------- converged at time : 0.3
+
+
+Data Record #1
+===========================================================================
+Step = 3
+Time = 0.3
+Data = x;y;z
+
+Data Record #2
+===========================================================================
+Step = 3
+Time = 0.3
+Data = ux;uy;uz
+
+Data Record #3
+===========================================================================
+Step = 3
+Time = 0.3
+Data = E1
+
+===== beginning time step 4 : 0.4 =====
+
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+Setting parameter "scale" to : 0.4
+
+Reforming stiffness matrix: reformation #1
+
+ 1
+ Nonlinear solution status: time= 0.4
+	stiffness updates             = 0
+	right hand side evaluations   = 2
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            2.094436e+09    1.163049e+06    0.000000e+00 
+	   energy              7.816955e+06    2.157234e+04    7.816955e+04 
+	   displacement        1.890411e+05    1.890411e+05    1.890411e-01 
+ 2
+ Nonlinear solution status: time= 0.4
+	stiffness updates             = 1
+	right hand side evaluations   = 3
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            2.094436e+09    2.098083e+04    0.000000e+00 
+	   energy              7.816955e+06    1.684123e+02    7.816955e+04 
+	   displacement        1.890411e+05    1.197258e+01    1.893084e-01 
+ 3
+ Nonlinear solution status: time= 0.4
+	stiffness updates             = 2
+	right hand side evaluations   = 4
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            2.094436e+09    2.874128e+01    0.000000e+00 
+	   energy              7.816955e+06    2.065146e-01    7.816955e+04 
+	   displacement        1.890411e+05    2.429569e-01    1.892926e-01 
+ 4
+ Nonlinear solution status: time= 0.4
+	stiffness updates             = 3
+	right hand side evaluations   = 5
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            2.094436e+09    5.759316e-01    0.000000e+00 
+	   energy              7.816955e+06    3.749196e-03    7.816955e+04 
+	   displacement        1.890411e+05    1.224561e-03    1.892871e-01 
+
+convergence summary
+    number of iterations   : 4
+    number of reformations : 1
+
+------- converged at time : 0.4
+
+
+Data Record #1
+===========================================================================
+Step = 4
+Time = 0.4
+Data = x;y;z
+
+Data Record #2
+===========================================================================
+Step = 4
+Time = 0.4
+Data = ux;uy;uz
+
+Data Record #3
+===========================================================================
+Step = 4
+Time = 0.4
+Data = E1
+
+===== beginning time step 5 : 0.5 =====
+
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+Setting parameter "scale" to : 0.5
+
+Reforming stiffness matrix: reformation #1
+
+ 1
+ Nonlinear solution status: time= 0.5
+	stiffness updates             = 0
+	right hand side evaluations   = 2
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.945223e+09    1.322709e+06    0.000000e+00 
+	   energy              7.069779e+06    2.053719e+04    7.069779e+04 
+	   displacement        1.895741e+05    1.895741e+05    1.895741e-01 
+ 2
+ Nonlinear solution status: time= 0.5
+	stiffness updates             = 1
+	right hand side evaluations   = 3
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.945223e+09    3.008212e+04    0.000000e+00 
+	   energy              7.069779e+06    1.927831e+02    7.069779e+04 
+	   displacement        1.895741e+05    6.310011e+00    1.898219e-01 
+ 3
+ Nonlinear solution status: time= 0.5
+	stiffness updates             = 2
+	right hand side evaluations   = 4
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.945223e+09    3.952454e+01    0.000000e+00 
+	   energy              7.069779e+06    8.831490e-02    7.069779e+04 
+	   displacement        1.895741e+05    1.923558e-01    1.897936e-01 
+ 4
+ Nonlinear solution status: time= 0.5
+	stiffness updates             = 3
+	right hand side evaluations   = 5
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.945223e+09    1.199304e+00    0.000000e+00 
+	   energy              7.069779e+06    6.950901e-03    7.069779e+04 
+	   displacement        1.895741e+05    2.647861e-04    1.897916e-01 
+
+convergence summary
+    number of iterations   : 4
+    number of reformations : 1
+
+------- converged at time : 0.5
+
+
+Data Record #1
+===========================================================================
+Step = 5
+Time = 0.5
+Data = x;y;z
+
+Data Record #2
+===========================================================================
+Step = 5
+Time = 0.5
+Data = ux;uy;uz
+
+Data Record #3
+===========================================================================
+Step = 5
+Time = 0.5
+Data = E1
+
+===== beginning time step 6 : 0.6 =====
+
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+Setting parameter "scale" to : 0.6
+
+Reforming stiffness matrix: reformation #1
+
+ 1
+ Nonlinear solution status: time= 0.6
+	stiffness updates             = 0
+	right hand side evaluations   = 2
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.873559e+09    1.508313e+06    0.000000e+00 
+	   energy              6.515326e+06    1.952384e+04    6.515326e+04 
+	   displacement        1.900129e+05    1.900129e+05    1.900129e-01 
+ 2
+ Nonlinear solution status: time= 0.6
+	stiffness updates             = 1
+	right hand side evaluations   = 3
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.873559e+09    4.074258e+04    0.000000e+00 
+	   energy              6.515326e+06    2.091114e+02    6.515326e+04 
+	   displacement        1.900129e+05    4.702649e+00    1.902131e-01 
+ 3
+ Nonlinear solution status: time= 0.6
+	stiffness updates             = 2
+	right hand side evaluations   = 4
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.873559e+09    5.213312e+01    0.000000e+00 
+	   energy              6.515326e+06    5.416952e-02    6.515326e+04 
+	   displacement        1.900129e+05    1.943066e-01    1.901770e-01 
+ 4
+ Nonlinear solution status: time= 0.6
+	stiffness updates             = 3
+	right hand side evaluations   = 5
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.873559e+09    2.001547e+00    0.000000e+00 
+	   energy              6.515326e+06    9.346089e-03    6.515326e+04 
+	   displacement        1.900129e+05    6.116678e-04    1.901779e-01 
+
+convergence summary
+    number of iterations   : 4
+    number of reformations : 1
+
+------- converged at time : 0.6
+
+
+Data Record #1
+===========================================================================
+Step = 6
+Time = 0.6
+Data = x;y;z
+
+Data Record #2
+===========================================================================
+Step = 6
+Time = 0.6
+Data = ux;uy;uz
+
+Data Record #3
+===========================================================================
+Step = 6
+Time = 0.6
+Data = E1
+
+===== beginning time step 7 : 0.7 =====
+
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+Setting parameter "scale" to : 0.7
+
+Reforming stiffness matrix: reformation #1
+
+ 1
+ Nonlinear solution status: time= 0.7
+	stiffness updates             = 0
+	right hand side evaluations   = 2
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.853814e+09    1.706670e+06    0.000000e+00 
+	   energy              6.092562e+06    1.848481e+04    6.092562e+04 
+	   displacement        1.904598e+05    1.904598e+05    1.904598e-01 
+ 2
+ Nonlinear solution status: time= 0.7
+	stiffness updates             = 1
+	right hand side evaluations   = 3
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.853814e+09    5.173803e+04    0.000000e+00 
+	   energy              6.092562e+06    2.160583e+02    6.092562e+04 
+	   displacement        1.904598e+05    3.102175e+00    1.906227e-01 
+ 3
+ Nonlinear solution status: time= 0.7
+	stiffness updates             = 2
+	right hand side evaluations   = 4
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.853814e+09    6.154904e+01    0.000000e+00 
+	   energy              6.092562e+06    6.343405e-02    6.092562e+04 
+	   displacement        1.904598e+05    1.411412e-01    1.905763e-01 
+
+convergence summary
+    number of iterations   : 3
+    number of reformations : 1
+
+------- converged at time : 0.7
+
+
+Data Record #1
+===========================================================================
+Step = 7
+Time = 0.7
+Data = x;y;z
+
+Data Record #2
+===========================================================================
+Step = 7
+Time = 0.7
+Data = ux;uy;uz
+
+Data Record #3
+===========================================================================
+Step = 7
+Time = 0.7
+Data = E1
+
+===== beginning time step 8 : 0.8 =====
+
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+Setting parameter "scale" to : 0.8
+
+Reforming stiffness matrix: reformation #1
+
+ 1
+ Nonlinear solution status: time= 0.8
+	stiffness updates             = 0
+	right hand side evaluations   = 2
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.871319e+09    1.905443e+06    0.000000e+00 
+	   energy              5.762043e+06    1.740262e+04    5.762043e+04 
+	   displacement        1.905630e+05    1.905630e+05    1.905630e-01 
+ 2
+ Nonlinear solution status: time= 0.8
+	stiffness updates             = 1
+	right hand side evaluations   = 3
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.871319e+09    6.170981e+04    0.000000e+00 
+	   energy              5.762043e+06    2.138093e+02    5.762043e+04 
+	   displacement        1.905630e+05    2.805852e+00    1.906871e-01 
+ 3
+ Nonlinear solution status: time= 0.8
+	stiffness updates             = 2
+	right hand side evaluations   = 4
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.871319e+09    6.327204e+01    0.000000e+00 
+	   energy              5.762043e+06    9.160047e-02    5.762043e+04 
+	   displacement        1.905630e+05    1.346691e-01    1.906387e-01 
+
+convergence summary
+    number of iterations   : 3
+    number of reformations : 1
+
+------- converged at time : 0.8
+
+
+Data Record #1
+===========================================================================
+Step = 8
+Time = 0.8
+Data = x;y;z
+
+Data Record #2
+===========================================================================
+Step = 8
+Time = 0.8
+Data = ux;uy;uz
+
+Data Record #3
+===========================================================================
+Step = 8
+Time = 0.8
+Data = E1
+
+===== beginning time step 9 : 0.9 =====
+
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+Setting parameter "scale" to : 0.9
+
+Reforming stiffness matrix: reformation #1
+
+ 1
+ Nonlinear solution status: time= 0.9
+	stiffness updates             = 0
+	right hand side evaluations   = 2
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.917288e+09    2.096270e+06    0.000000e+00 
+	   energy              5.497823e+06    1.627015e+04    5.497823e+04 
+	   displacement        1.905392e+05    1.905392e+05    1.905392e-01 
+ 2
+ Nonlinear solution status: time= 0.9
+	stiffness updates             = 1
+	right hand side evaluations   = 3
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.917288e+09    7.014615e+04    0.000000e+00 
+	   energy              5.497823e+06    2.043942e+02    5.497823e+04 
+	   displacement        1.905392e+05    2.065654e+00    1.906416e-01 
+ 3
+ Nonlinear solution status: time= 0.9
+	stiffness updates             = 2
+	right hand side evaluations   = 4
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.917288e+09    6.044067e+01    0.000000e+00 
+	   energy              5.497823e+06    1.138427e-01    5.497823e+04 
+	   displacement        1.905392e+05    1.431240e-01    1.905931e-01 
+
+convergence summary
+    number of iterations   : 3
+    number of reformations : 1
+
+------- converged at time : 0.9
+
+
+Data Record #1
+===========================================================================
+Step = 9
+Time = 0.9
+Data = x;y;z
+
+Data Record #2
+===========================================================================
+Step = 9
+Time = 0.9
+Data = ux;uy;uz
+
+Data Record #3
+===========================================================================
+Step = 9
+Time = 0.9
+Data = E1
+
+===== beginning time step 10 : 1 =====
+
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+Setting parameter "scale" to : 1
+
+Reforming stiffness matrix: reformation #1
+
+ 1
+ Nonlinear solution status: time= 1
+	stiffness updates             = 0
+	right hand side evaluations   = 2
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.986115e+09    2.272567e+06    0.000000e+00 
+	   energy              5.282407e+06    1.511471e+04    5.282407e+04 
+	   displacement        1.911263e+05    1.911263e+05    1.911263e-01 
+ 2
+ Nonlinear solution status: time= 1
+	stiffness updates             = 1
+	right hand side evaluations   = 3
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.986115e+09    7.652438e+04    0.000000e+00 
+	   energy              5.282407e+06    1.899402e+02    5.282407e+04 
+	   displacement        1.911263e+05    1.606488e+00    1.911701e-01 
+ 3
+ Nonlinear solution status: time= 1
+	stiffness updates             = 2
+	right hand side evaluations   = 4
+	stiffness matrix reformations = 1
+	step from line search         = 1.000000
+	convergence norms :     INITIAL         CURRENT         REQUIRED
+	   residual            1.986115e+09    5.373716e+01    0.000000e+00 
+	   energy              5.282407e+06    1.257031e-01    5.282407e+04 
+	   displacement        1.911263e+05    6.572994e-02    1.911231e-01 
+
+convergence summary
+    number of iterations   : 3
+    number of reformations : 1
+
+------- converged at time : 1
+
+
+Data Record #1
+===========================================================================
+Step = 10
+Time = 1
+Data = x;y;z
+
+Data Record #2
+===========================================================================
+Step = 10
+Time = 1
+Data = ux;uy;uz
+
+Data Record #3
+===========================================================================
+Step = 10
+Time = 1
+Data = E1
+
+
+ N O N L I N E A R   I T E R A T I O N   I N F O R M A T I O N
+
+	Number of time steps completed .................... : 10
+
+	Total number of equilibrium iterations ............ : 36
+
+	Average number of equilibrium iterations .......... : 3.6
+
+	Total number of right hand evaluations ............ : 46
+
+	Total number of stiffness reformations ............ : 10
+
+
+ L I N E A R   S O L V E R   S T A T S
+
+	Total calls to linear solver ........ : 36
+
+	Avg iterations per solve ............ : 1
+
+	Time in linear solver: 0:00:00
+
+ Peak memory  : 36.8 MB
+
+ Elapsed time : 0:00:00
+
+ T I M I N G   I N F O R M A T I O N
+
+	Input time ...................... : 0:00:00 (0.01 sec)
+
+	Initialization time ............. : 0:00:00 (0.004 sec)
+
+	Solve time ...................... : 0:00:00 (0.487 sec)
+
+	   IO-time (plot, dmp, data) .... : 0:00:00 (0.113 sec)
+
+	   reforming stiffness .......... : 0:00:00 (0.003 sec)
+
+	   evaluating stiffness ......... : 0:00:00 (0.021 sec)
+
+	   evaluating residual .......... : 0:00:00 (0.003 sec)
+
+	   model update ................. : 0:00:00 (0.016 sec)
+
+	   QN updates ................... : 0:00:00 (0.002 sec)
+
+	   time in linear solver ........ : 0:00:00 (0.282 sec)
+
+	Total elapsed time .............. : 0:00:01 (0.501 sec)
+
+
+ N O R M A L   T E R M I N A T I O N
+
